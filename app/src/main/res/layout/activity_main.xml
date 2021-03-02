@@ -6,13 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/btn_click_one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:text="Click BTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        app:layout_constraintEnd_toEndOf="@+id/btn_click_one"
+        app:layout_constraintStart_toStartOf="@+id/btn_click_one"
+        app:layout_constraintTop_toBottomOf="@+id/btn_click_one" />
+    <Button
+        android:id="@+id/btn_click_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click BTN"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_one"
+        app:layout_constraintStart_toStartOf="@+id/text_view_one"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_one"/>
+
+    <TextView
+        android:id="@+id/text_view_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        app:layout_constraintEnd_toEndOf="@+id/btn_click_two"
+        app:layout_constraintStart_toStartOf="@+id/btn_click_two"
+        app:layout_constraintTop_toBottomOf="@+id/btn_click_two"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
